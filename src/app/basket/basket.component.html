@@ -1,0 +1,15 @@
+<div>
+    <div id='basket-header'><h3>Your basket</h3></div>
+    <div class="items-list">
+        <div class="item" *ngFor="let item of items">
+            <div id="img" style="background-image: url({{item.image}});"></div>
+            <div class="film-title"><h4>{{item.name}}</h4><p>{{ item.description }}</p></div>
+            <div class="price"><p>{{ item.price | currency }}</p></div>
+            <button id="delete-item-btn" (click)="removeFromBasket(item)">Delete</button>
+        </div>
+    </div>
+    <div class="basket-footer">
+        <div id="total">Total cost: {{ totalCost | currency }}</div>
+        <button id="clear-btn" (click)="clearBasket()">Clear the basket</button>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="section-1">
+    <div class="container">
+        <span>Helps & FAQs</span>
+        <div>
+            <div id="flag">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-2">
+    <div class="container">
+        <div id="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="main-title">
+            <span>HoWo</span>
+        </div>
+        <div id="navbar">
+            <div>Catalog</div>
+            <div>Rating</div>
+        </div>
+        <div id="search"><input type="text" placeholder="Simulating of searhing..."><fa-icon id="search-btn" [icon]="faSearch"></fa-icon></div>
+        <div id="icons">
+            <div>
+                <a href='#'>
+                    <fa-icon [icon]="faUser"></fa-icon>
+                </a>
+            </div>
+            <div>
+                <a href='#'>
+                    <fa-icon [icon]="faShopingBasket" (click)="displayToggle = !displayToggle"></fa-icon>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="section-3">
+    <div class="container">
+        <button><span>Lorem</span></button>
+        <button><span>Amet</span></button>
+        <button><span>Adipisicing</span></button>
+        <button><span>Ipsum</span></button>
+        <button><span>Deserunt</span></button>
+    </div>
+</div>
+
+<app-basket [ngClass]="{
+    active: displayToggle,
+    '': !displayToggle
+}"></app-basket>

@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
+## Clone the repo
+`git clone https://github.com/nelfy84321/InventorThirdHW.git
+cd inventorSoft`
+
+## Install npm packages:
+`npm install`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About
+The application is completely front-end. A fake server was created  on base of "jsonplaceholder.typicode" to store the database and send JSON requests. The app displays a list of movies that you can add to your own basket. Local storage is used to store a list of movies that has been added to the basket.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project is designed by ASOS.com (you can see an example in the exp.jpg file). You can add a movie to your cart by clicking on the "+" icon next to each movie.
+Click on the basket icon to see the content of your basket. You can delete every movie one by one or clear the basket completely using the buttons 'delete' and 'clear the basket'.
+The content of the basket is updated by using rxjs requests.
